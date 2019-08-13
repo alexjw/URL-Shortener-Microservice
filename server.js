@@ -42,7 +42,6 @@ var createAndSaveCounter = function() {
       counterObj.save()
 };
 
-//createAndSaveCounter();
 Counter.findOne({this_is_a_number: 1}, (err, data) => {
   if(data == null)
     createAndSaveCounter()
